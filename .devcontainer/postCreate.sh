@@ -5,7 +5,7 @@
 # =============================================================================
 set -euo pipefail
 
-WORKSPACE="/workspaces/codespaces-hermes-server"
+WORKSPACE="/workspaces/my-hermes-server"
 LOG_DIR="$WORKSPACE"
 TIMESTAMP=$(date)
 
