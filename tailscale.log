@@ -1,0 +1,70 @@
+TPM: error opening: stat /dev/tpmrm0: no such file or directory
+2026/07/11 08:44:20 logtail started
+2026/07/11 08:44:20 Program starting: v1.98.8-t1241b225b-g0520dfda5, Go 1.26.3: []string{"tailscaled", "--tun=userspace-networking", "--socks5-server=localhost:1055", "--outbound-http-proxy-listen=localhost:1055"}
+2026/07/11 08:44:20 LogID: 165882530a554109220b937241e155b1d31848266003c72ebc45dbf9d6ff6e77
+2026/07/11 08:44:20 logpolicy: using system state directory "/var/lib/tailscale"
+2026/07/11 08:44:20 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2026/07/11 08:44:20 dns: [rc=resolved resolved=not-in-use ret=direct]
+2026/07/11 08:44:20 dns: using "direct" mode
+2026/07/11 08:44:20 dns: using *dns.directManager
+2026/07/11 08:44:20 wgengine.NewUserspaceEngine(tun "userspace-networking") ...
+2026/07/11 08:44:20 dns: inotify: NewDirWatcher: context canceled
+2026/07/11 08:44:20 tstun: error initializing tun dev stats polling: error getting ifIndex: no such device
+2026/07/11 08:44:20 dns: using dns.noopManager
+2026/07/11 08:44:20 link state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.13.48/16 llu6]} v4=true v6=false}
+2026/07/11 08:44:20 magicsock: disco key = d:8f40364cb9f69434
+2026/07/11 08:44:20 Creating WireGuard device...
+2026/07/11 08:44:20 Bringing WireGuard device up...
+2026/07/11 08:44:20 Bringing router up...
+2026/07/11 08:44:20 Clearing router settings...
+2026/07/11 08:44:20 Starting network monitor...
+2026/07/11 08:44:20 Engine created.
+2026/07/11 08:44:20 pm: using backend prefs for "profile-ae40": Prefs{ra=false dns=true want=true routes=[] statefulFiltering=false nf=on update=check Persist{o=, n=[Fg0Mr] u="mrphamtruong@gmail.com" ak=-}}
+2026/07/11 08:44:20 logpolicy: using system state directory "/var/lib/tailscale"
+2026/07/11 08:44:20 linkChange: in state NoState; PAC or proxyConfig changed; updating routes
+2026/07/11 08:44:20 got LocalBackend in 162ms
+2026/07/11 08:44:20 Start
+2026/07/11 08:44:20 ipnext: "conn25": skipping extension
+2026/07/11 08:44:20 ipnext: active extensions: conn25, portlist, posture, clientupdate, relayserver, taildrop
+2026/07/11 08:44:20 load netmap from cache: netmap cache is not available
+2026/07/11 08:44:20 Backend: logs: be:165882530a554109220b937241e155b1d31848266003c72ebc45dbf9d6ff6e77 fe:
+2026/07/11 08:44:20 control: client.Login(0)
+2026/07/11 08:44:20 health(warnable=warming-up): error: Tailscale is starting. Please wait.
+2026/07/11 08:44:20 control: doLogin(regen=false, hasUrl=false)
+2026/07/11 08:44:21 control: control server key from https://controlplane.tailscale.com: ts2021=[fSeS+], legacy=[nlFWp]
+2026/07/11 08:44:21 control: RegisterReq: onode= node=[Fg0Mr] fup=false nks=false
+2026/07/11 08:44:21 control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=true; authURL=false
+2026/07/11 08:44:21 health(warnable=not-in-map-poll): ok
+2026/07/11 08:44:21 control: netmap: got new dial plan from control
+2026/07/11 08:44:22 active login: mrphamtruong@gmail.com
+2026/07/11 08:44:22 netmap: suggested exit node: no preferred DERP, try again later
+2026/07/11 08:44:22 Switching ipn state NoState -> Starting (WantRunning=true, nm=true)
+2026/07/11 08:44:22 magicsock: SetPrivateKey called (init)
+2026/07/11 08:44:22 wgengine: Reconfig: configuring userspace WireGuard config (with 1 peers)
+2026/07/11 08:44:22 wgengine: Reconfig: configuring router
+2026/07/11 08:44:22 wgengine: Reconfig: user dialer
+2026/07/11 08:44:22 tsdial: bart table size: 4
+2026/07/11 08:44:22 wgengine: Reconfig: configuring DNS
+2026/07/11 08:44:22 dns: Set: {DefaultResolvers:[] Routes:{tail9f4918.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tail9f4918.ts.net.] Hosts:5}
+2026/07/11 08:44:22 dns: Resolvercfg: {Routes:{ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:5 LocalDomains:[tail9f4918.ts.net.]+65arpa, cloud="azure"}
+2026/07/11 08:44:22 dns: OScfg: {Nameservers:[100.100.100.100 fd7a:115c:a1e0::53] SearchDomains:[tail9f4918.ts.net.] MatchDomains:[tail9f4918.ts.net. ts.net.]+65arpa}
+2026/07/11 08:44:22 peerapi: serving on http://100.77.212.31:51823
+2026/07/11 08:44:22 peerapi: serving on http://[fd7a:115c:a1e0::da32:d420]:51823
+2026/07/11 08:44:22 monitor: gateway and self IP changed: gw=10.0.0.1 self=10.0.13.48
+2026/07/11 08:44:23 netcheck: DetectCaptivePortal(found=false)
+2026/07/11 08:44:23 magicsock: home DERP changing from derp-0 [0ms] to derp-3 [1ms] (forced=false)
+2026/07/11 08:44:23 magicsock: home is now derp-3 (sin)
+2026/07/11 08:44:23 writing netmap to disk cache
+2026/07/11 08:44:23 magicsock: endpoints changed: 23.97.62.129:52832 (stun), 10.0.13.48:57366 (local), 172.17.0.1:57366 (local)
+2026/07/11 08:44:23 magicsock: adding connection to derp-3 for home-keep-alive
+2026/07/11 08:44:23 magicsock: 1 active derp conns: derp-3=cr0s,wr0s
+2026/07/11 08:44:23 derphttp.Client.Connect: connecting to derp-3 (sin)
+2026/07/11 08:44:23 control: NetInfo: NetInfo{varies=false ipv6=false ipv6os=true udp=true icmpv4=false derp=#3 portmap= link="" firewallmode=""}
+2026/07/11 08:44:23 health(warnable=no-derp-connection): ok
+2026/07/11 08:44:23 health(warnable=warming-up): ok
+2026/07/11 08:44:23 Switching ipn state Starting -> Running (WantRunning=true, nm=true)
+2026/07/11 08:44:23 health(warnable=no-derp-connection): ok
+2026/07/11 08:44:23 magicsock: derp-3 connected; connGen=1
+2026/07/11 08:44:23 health(warnable=no-derp-connection): ok
+2026/07/11 08:44:23 [RATELIMIT] format("health(warnable=%s): ok")
+2026/07/11 08:44:24 magicsock: disco: node [JdcP3] d:ba270950675cf510 now using 113.160.223.126:41641 mtu=1360 tx=2c427a252f29
